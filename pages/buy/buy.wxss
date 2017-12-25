@@ -1,0 +1,53 @@
+.service{
+  font-size: 34rpx;
+}
+.buy-container{
+  padding: 30rpx 30rpx 0
+}
+.bg-container {
+  background: rgba(136, 136, 136, .1)
+}
+.basic{
+  color: #888888
+}
+.basic-container{
+  padding: 20rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  border-radius: 12rpx;
+  border: 1px solid #0185C9
+}
+.origin-price{
+  text-decoration: line-through
+}
+.price{
+  padding: 10rpx 30rpx;
+}
+.red{
+  color: red
+}
+.buy-time{
+  font-size: 28rpx;
+  color: #1f2d3d;
+  margin: 22rpx 0 22rpx 0
+}
+.gap{
+  padding: 10rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  border-radius: 12rpx;
+  background: #4eabe6;
+  color: #ffffff;
+  display: inline-block
+}
+.buyer{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  position: fixed;
+  bottom: 0;
+  font-size: 34rpx;
+  background-image: linear-gradient(to right, #99B8FB 60%, #5488F9 100%)
+}

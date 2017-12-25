@@ -1,0 +1,8 @@
+<view wx:for="{{detail}}" wx:key="{{index}}" wx:for-item='Item'>
+  <view class='title'>{{Item.title}}</view>
+  <view class='column' wx:for="{{Item.content}}" wx:for-index="key" wx:for-item="setItem">
+  <view class='detial-add'>{{key}}</view>
+    <view class='detail-value' wx:if="{{setItem !== null}}">{{setItem}}</view>
+    <view wx:else class='detail-value'> </view>
+  </view>
+</view>

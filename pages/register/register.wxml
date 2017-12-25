@@ -1,0 +1,10 @@
+<image src='http://img.souche.com/f2e/ad1809c6441823cdbb9379c639e1c0bc.png'></image>
+<view class="log-list">
+  <view class='login-view'><view class='loger'>手机： </view><input value="{{user}}" class="{{!emailError ? 'login-input r-border' : 'login-input error-border'}}" bindinput='emailInput' bindblur="emailBlur"  placeholder='请输入手机号'></input></view>
+  <view class='login-view'><view class='loger'>密码： </view><input value='{{psd}}' class='login-input r-border' bindinput='psdInput' placeholder='请输入密码' password="true"></input></view>
+  <view class='login-view'><view class='loger'>密码： </view><input value='{{psd}}' class="{{!repasswordError ? 'login-input r-border' : 'login-input error-border'}}" bindinput='repsdInput' placeholder='请再次输入密码' password="true"></input></view>
+  <view class='login-view'><view class='loger'>昵称： </view><input value='{{psd}}' class='login-input r-border' bindinput='nickInput' placeholder='请输入昵称'></input></view>
+</view>
+<view class='reg' bindtap='reback'>返回登录</view>
+<view class="{{email !== '' && password !== '' && repassword !== '' && nickname !== ''?'log-to gb':'log-to bg'}}" bindtap='register'>立即注册</view>
+

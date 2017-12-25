@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tradeList/tradeList",
+    "pages/tradeDetail/tradeDetail",
+    "pages/buy/buy",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#101013",
+    "navigationBarTitleText": "天天外贸",
+    "navigationBarTextStyle": "#fff"
+  }
+}

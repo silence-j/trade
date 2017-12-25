@@ -1,0 +1,21 @@
+<!--pages/tradeList/tradeList.wxml-->
+<view class='list-container'>
+  <view class='search-input'>
+    <input class='list-input' value='{{searchValue}}'></input> 
+    <icon type="clear" bindtap='clear' size="15" class='clear'></icon>
+    <icon type="search" size="15" bindtap='searchList' class='search'></icon>
+  </view>
+  <view class='country-choose' bindtap='choose'>国家筛选 <text class='arrow'></text></view>
+  <view class='contect' wx:for="{{list}}" wx:key="{{index}}" bindtap='jumpDetail' data-id="{{item.id}}" data-country="{{item.buyerCountry}}">
+    <view class='name'><text class='nameP'>{{item.buyer_facet}}</text> <text class='time'>{{item.arrivaldate}}</text></view>
+    <view class='list-contect'>{{item.descriptionEn}}</view>
+    <view class='country-name'>国家： <text>{{item.buyerCountry}}</text> </view>
+  </view>
+  <view class='tab-country' wx:if="{{show}}" catchtap='chanceCountry'>
+    <picker-view indicator-style="height: 50rpx;" class='picker-country' value="{{countryValue}}" bindchange="changeCountry">
+      <picker-view-column>
+         <view wx:for="{{country}}" wx:key="{{index}}" class='sign-country'>{{item}}</view>
+      </picker-view-column>
+      </picker-view> 
+  </view>
+</view>

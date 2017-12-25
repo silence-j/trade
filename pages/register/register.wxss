@@ -1,0 +1,68 @@
+.log-list{
+  width: 100%;
+  padding: 200rpx 30rpx 0 30rpx;
+  margin: 0 auto;
+  height: 1200rpx;
+  font-size: 34rpx;
+  box-sizing: border-box;
+  /* background-image: linear-gradient(to bottom, #99B8FB 60%, #5488F9 100%) */
+   background: url('http://img.souche.com/f2e/4ac724e4dc409699923c16dc979b95b5.png') 
+}
+.login-view{
+  font-size: 30rpx;
+  height: 58rpx;
+  width: 85%;
+  margin: 50rpx auto 0;
+  line-height: 58rpx ;
+  position: relative;
+}
+.loger{
+  position: absolute;
+  top: 0;
+  left: 45rpx;
+}
+.login-input{
+  /* width: 60%; */
+  height: 56rpx;
+  padding: 0 20rpx;
+  margin-left: 142rpx;
+  vertical-align: inherit;
+  display: inline-block;
+  border-radius: 8rpx; 
+}
+.r-border{
+  border: 1px solid #999999;
+}
+.error-border{
+  border: 1px solid red;
+}
+.log-to{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  position: fixed;
+  bottom: 0;
+  font-size: 34rpx;
+  border-radius: 8rpx;
+}
+.bg{
+  background: #999999;  
+}
+.gb{
+  background-image: linear-gradient(to right, #99B8FB 60%, #5488F9 100%)
+}
+image{
+  width: 100%;
+  height: 1200rpx;
+  position: absolute;
+  top: 0
+}
+.reg{
+  color: #5488F9;
+  position: absolute;
+  bottom: 120rpx;
+  right: 30rpx;
+  font-size: 28rpx;
+}

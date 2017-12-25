@@ -1,0 +1,26 @@
+<view class='trade-container'>
+   <view class='top'>
+      <view class='buyTo pos' bindtap='login' wx:if="{{loginor == 'notok'}}">登录</view>
+      <view class='buyTo pos' bindtap="buyTo" wx:if="{{loginor == 'ok'}}">购买</view>
+      <view class='buyTo post' bindtap="quite" wx:if="{{loginor == 'ok'}}">退出</view>
+      <image class='bg-image' src='http://img.souche.com/f2e/73e6c91702a4ffec075c3e39558f2664.png'></image>
+      <text class='decription'>海关数据搜索</text>
+   </view>
+   <view class='search'>
+     <view class="{{currt2 ? 'chance-btn active' : 'chance-btn'}}" bindtap='chance' data-search='1'>商品描述</view>
+     <view class="{{currt0 ? 'chance-btn active' : 'chance-btn'}}" bindtap='chance' data-search='3'>买家</view>
+     <view class="{{currt1 ? 'chance-btn active' : 'chance-btn'}}" bindtap='chance' data-search='2'>卖家</view>     
+    <view class='search-key'>
+      <input placeholder='请输入关键词' class='input' bindinput='search' maxlength='30' bindconfirm="jumpList"></input>
+      <icon bindtap='jumpList' type="search" size='20' class='icon'></icon>
+    </view>
+   </view>
+   <view class='contact-us'>
+      <!-- <button open-type="contact" class='us'>联系我们</button> -->
+       <contact-button class='pu' type="default-light"  size="25"></contact-button>
+       <contact-button class='pu1' type="default-light"  size="25"></contact-button>
+       <contact-button class='pu2' type="default-light"  size="25"></contact-button> 
+        <text class='us'>联系我们</text>  
+      <view>2017 <image class='c' src='http://img.souche.com/f2e/2f5d3d5420960575d9c2b8067f6834e2.png'></image> 天津云格网络科技有限公司</view>
+    </view>
+</view>

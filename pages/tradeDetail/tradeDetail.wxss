@@ -1,0 +1,40 @@
+.column{
+  width: 100%;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E5E5E5
+}
+.title{
+  height: 38rpx;
+  line-height: 38rpx;
+  padding: 40rpx 30rpx;
+  font-size: 34rpx;
+  border-radius: 8rpx;
+  background: #F8F8F8;
+}
+.buyer{
+  font-size: 34rpx;
+  color: #222222;
+}
+.data{
+  font-size: 26rpx;
+  color: #888888;
+}
+.detail-container{
+  width: 100%
+}
+.column1{
+  width: calc(100% - 30rpx);
+  padding: 20rpx 30rpx 20rpx 0;
+  margin-left: 19rpx;
+  border-bottom: 1px solid #E5E5E5
+}
+.detial-add{
+  font-size: 28rpx;
+  color: #888888;
+}
+.detail-value{
+  font-size: 32rpx;
+  color: #222222;
+  min-height: 24rpx
+}

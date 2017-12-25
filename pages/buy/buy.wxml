@@ -1,0 +1,30 @@
+<!--pages/buy/buy.wxml-->
+<view class='buy-container'>
+  <text class='service'>购买服务</text>
+  <view class='basic-container'>
+    <text class='basic'>基础班(无次限查询)</text>
+    <view class='price'>
+      <view class='origin-price'>原价： ￥ 299/月</view>
+      <view class='discount'>酬宾价： ￥ <text class='red'>69</text>/月</view>
+    </view>
+  </view>
+  <view class='basic-container bg-container'>
+    <text class='basic'>标准版</text>
+    <view class='price'>
+      <view class='origin-price1'> ￥ 4599/年</view>
+      <view class='discount'>无限次查询公司提单数据导出港口统计数据</view>
+    </view>
+  </view>
+  <view class='basic-container bg-container'>
+    <text class='basic'>高级版</text>
+    <view class='price'>
+      <view class='origin-price1'> ￥ 5999/年</view>
+      <view class='discount'>标准版所有权限获取公司联系方式贸易伙伴数据</view>
+    </view>
+  </view>
+  <view class='buy-time'>购买时间：</view>
+    <view>
+      <view class='gap' wx:for="{{time}}" wx:key="{{index}}" bindtap="yearNum" data-year="{{index}}">{{item}}</view>
+    </view>
+</view>
+ <view class='buyer' bindtap="buyNow">￥{{lastPrice}}立即购买</view>
